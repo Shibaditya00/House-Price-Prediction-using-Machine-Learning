@@ -1,0 +1,62 @@
+Project Summary:
+This project aims to predict the median value of owner-occupied homes in the Boston suburbs using machine learning techniques. It follows a structured data science workflow including data preprocessing, analysis, model training using XGBoost, and performance evaluation.
+
+Dataset Information:
+The dataset used in this project originates from the UCI Machine Learning Repository. It was originally collected in 1978 and includes 506 entries. Each entry contains 14 features that provide statistical and geographical information about housing conditions across different suburbs of Boston, Massachusetts.
+
+The features include:
+
+* CRIM: Crime rate by town
+* ZN: Proportion of residential land zoned for large lots
+* INDUS: Proportion of non-retail business acres
+* CHAS: Charles River dummy variable (1 if tract bounds river; 0 otherwise)
+* NOX: Nitric oxide concentration
+* RM: Average number of rooms per dwelling
+* AGE: Proportion of owner-occupied units built prior to 1940
+* DIS: Weighted distance to employment centers
+* RAD: Accessibility to radial highways
+* TAX: Property-tax rate per \$10,000
+* PTRATIO: Pupil-teacher ratio by town
+* B: 1000(Bk - 0.63)² where Bk is the proportion of Black residents by town
+* LSTAT: % lower status of the population
+* MEDV (Target): Median value of owner-occupied homes in \$1000s
+
+Workflow:
+
+1. House Price Data:
+
+   * Load the Boston Housing dataset.
+   * Inspect and summarize features and target variable (MEDV).
+
+2. Data Pre-processing:
+
+   * Check for null or missing values.
+   * Split dataset into features (X) and target (Y).
+   * Normalize or scale features if required.
+
+3. Data Analysis:
+
+   * Perform exploratory data analysis (EDA).
+   * Generate correlation heatmaps.
+   * Identify influential variables and outliers.
+
+4. Train-Test Split:
+
+   * Split the data into training (80%) and testing (20%) subsets.
+   * Ensure reproducibility using a fixed random seed.
+
+5. XGBoost Regressor:
+
+   * Apply XGBoost regression model.
+   * Fit the model to the training data.
+   * Predict on the test set.
+
+6. Evaluation:
+
+   * Evaluate model performance using metrics like:
+     * R² Score
+     * Mean Squared Error (MSE)
+   * Interpret the results and assess model accuracy.
+
+Conclusion:
+The project demonstrates a complete supervised regression pipeline using XGBoost on a real-world dataset. It highlights the effectiveness of advanced regression techniques in handling structured datasets and achieving high prediction accuracy.
